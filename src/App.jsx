@@ -1,6 +1,6 @@
 // RRD Imports
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 
@@ -23,7 +23,7 @@ import { deleteBudget } from "./actions/deleteBudget";
 
 
 // Brower Router
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Main />,
